@@ -1,0 +1,60 @@
+$sky-blue: #87ceeb;
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $sky-blue;
+}
+
+.login-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  h2 {
+    text-align: center;
+    color: $sky-blue;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: $sky-blue;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: $sky-blue;
+        outline: none;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $sky-blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($sky-blue, 10%);
+    }
+  }
+}
